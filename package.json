@@ -1,0 +1,19 @@
+{
+  "name": "simpson",
+  "version": "1.0.0",
+  "description": "calculo de área utilizando método simpson ",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Aurélio Gualda",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-jest": "^21.2.0",
+    "jest": "^21.2.1",
+    "regenerator-runtime": "^0.11.0"
+  },
+  "jest": {
+    "transform": {}
+  }
+}
