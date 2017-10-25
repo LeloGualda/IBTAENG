@@ -1,4 +1,4 @@
-function simpson(f,x0,x1,n){
+function Simpson(f,x0,x1,n){
    // validação de erros
    if (typeof f !== 'function')
         throw new Error('parâmetro f não é uma função');
@@ -15,4 +15,4 @@ function simpson(f,x0,x1,n){
       area += (i%2?4:2) * f(x0 + (h*i));
   return (area-f(x1))*h/3;
 }
-module.exports = simpson;
+module.exports = Simpson;

@@ -4,16 +4,30 @@
   "description": "calculo de área utilizando método simpson ",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "jest": "jest",
+    "test": "jest --coverage"
   },
   "author": "Aurélio Gualda",
   "license": "ISC",
   "devDependencies": {
+    "babel-core": "6",
+    "babel-eslint": "^7.2.3",
     "babel-jest": "^21.2.0",
+    "babel-loader": "7",
+    "babel-plugin-transform-class-properties": "^6.10.2",
+    "babel-plugin-transform-decorators": "^6.13.0",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-preset-es2015": "6",
+    "babel-preset-es2016": "6",
+    "babel-preset-jest": "^21.2.0",
+    "babel-preset-react": "6",
+    "babel-preset-stage-0": "6",
     "jest": "^21.2.1",
     "regenerator-runtime": "^0.11.0"
   },
   "jest": {
-    "transform": {}
+    "coverageReporters": [
+      "html"
+    ]
   }
 }
