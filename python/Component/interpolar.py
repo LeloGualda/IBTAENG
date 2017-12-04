@@ -20,16 +20,20 @@ def Escalonamento(matrix,resultante):
 
     return x
 
-def Polinomios (vetor):
-    soma = 0
-    for i,v in enumerate(vetor):
-        soma += math.pow(v,i+1)
-    return soma
-A = [
-        [1,0,0],
-        [0,2,2],
-        [0,0,1]
-    ]
-B = [1,8,1]
+def Polinomios (vetor,x):
+    print(vetor,vetor[-4])
 
-print(Escalonamento(A,B))
+    soma = vetor[len(vetor)-1]
+    for i in reversed(range(1,len(vetor))):
+        soma += vetor[-i -1] * math.pow(x,i)
+    return soma
+
+A = [
+        [1,0,0,0],
+        [0,2,2,0],
+        [0,0,1,0],
+        [0,0,1,2]
+    ]
+B = [5,8,3,4]
+print(Polinomios(Escalonamento(A,B),0))
+
