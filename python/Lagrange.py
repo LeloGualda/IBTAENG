@@ -1,8 +1,4 @@
-values = [
-          {"x0": 4, "x1": 1, "x2": -1, "y": 3},
-          {"x0": 1, "x1": 6, "x2": -3, "y": 10},
-          {"x0": 2, "x1": 1, "x2": 4, "y": 16}
-          ]
+
 
 """ 
  metodo de jacobi || 
@@ -43,4 +39,3 @@ print(k+1,len(x))
 
 
 
-lagrange(values)
