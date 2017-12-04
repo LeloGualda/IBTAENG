@@ -19,7 +19,7 @@ class Interpolar:
                for j in range(i-1,n):
                    matrix[k][j] = matrix[k][j] - (m*matrix[i-1][j])
 
-       for i in reversed(range(0,n-1)):
+       for i in reversed(range(0,n)):
            soma = 0
            for j in range(i+1,n):
                soma = soma + matrix[i][j]*x[j]
@@ -48,19 +48,4 @@ class Interpolar:
            for j in reversed(range(0,len(self.dom))):
                matriz[i][len(self.dom)-j-1] = math.pow(v,j)
        return matriz
-"""" 
-A = [
-       [1,1,1],
-       [4,2,1],
-       [9,3,1]
-]
-B = [5,7,9]
-"""
 
-
-myf = Interpolar()
-myf.addPoint(1,5)
-myf.addPoint(2,7)
-myf.addPoint(3,9)
-print(myf.polinomio)
-print(myf.F(4))
