@@ -1,8 +1,6 @@
 from Component.Interpolar import Interpolar
 
 
-
-
 sair = True
 while(sair):
     print('###  Escolha uma Opção \t  \t\t\t\t\t\t ### ')
